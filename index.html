@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GorillaInk — Mini tattoos & Blackwork en San Salvador</title>
+  <meta name="description" content="GorillaInk: mini tatuajes y blackwork con booking por WhatsApp. Mira el flash del mes, portafolio, aftercare y políticas." />
+  <link rel="preload" href="img/hero.jpg" as="image" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦍</text></svg>">
+  <meta name="theme-color" content="#0b0b0b" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="GorillaInk inicio">GorillaInk</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#flash">Flash</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#precios">Precios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-wa" href="https://wa.me/50374913370?text=Hola%20GorillaInk,%20quiero%20agendar%20un%20tatuaje" target="_blank" rel="noopener" aria-label="Abrir WhatsApp para agendar">
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero" aria-label="Portada">
+      <div class="hero-media" role="img" aria-label="Tatuaje en proceso">
+        <img src="img/hero.webp" alt="Tatuaje estilo blackwork en proceso" loading="eager" />
+      </div>
+      <div class="hero-content container">
+        <h1>Mini tattoos & Blackwork<br><span class="accent">en San Juan Opico</span></h1>
+        <p>Agenda por WhatsApp. Flash del mes con precios claros. Higiene, precisión y estilo.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/50374913370?text=Hola%20GorillaInk,%20quiero%20agendar%20un%20mini%20tatuaje" target="_blank" rel="noopener">Agendar ahora</a>
+          <a class="btn btn-secondary" href="#flash">Ver flash del mes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flash del mes -->
+    <section id="flash" class="section" aria-labelledby="flash-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="flash-title">Flash del mes</h2>
+          <p>Diseños listos para este mes. Reserva directa por WhatsApp.</p>
+        </div>
+        <div class="cards">
+          <!-- Card -->
+          <article class="card">
+            <img src="img/flash-01.jpg" alt="Flash 01 — Serpiente minimal" loading="lazy">
+            <div class="card-body">
+              <h3>Anime - minimal</h3>
+              <p class="price">$20 • máx 5 cm • negro</p>
+              <div class="card-actions">
+                <a class="btn btn-primary btn-sm" href="https://wa.me/50374913370?text=Quiero%20reservar%20el%20Flash%20Serpiente%20minimal" target="_blank" rel="noopener">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/flash-02.jpg" alt="Flash 02 — Mariposa lineal" loading="lazy">
+            <div class="card-body">
+              <h3>Mariposa lineal</h3>
+              <p class="price">$20 • máx 5 cm • negro</p>
+              <div class="card-actions">
+                <a class="btn btn-primary btn-sm" href="https://wa.me/50374913370?text=Quiero%20reservar%20el%20Flash%20Mariposa%20lineal" target="_blank" rel="noopener">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/flash-03.jpg" alt="Flash 03 — Lettering ondulado" loading="lazy">
+            <div class="card-body">
+              <h3>Lettering ondulado</h3>
+              <p class="price">$25 • máx 7 cm • negro</p>
+              <div class="card-actions">
+                <a class="btn btn-primary btn-sm" href="https://wa.me/50374913370?text=Quiero%20reservar%20el%20Flash%20Lettering%20ondulado" target="_blank" rel="noopener">Reservar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="center mt-24">
+          <a class="btn btn-secondary" href="https://wa.me/50374913370?text=Quiero%20ver%20todos%20los%20flash%20disponibles" target="_blank" rel="noopener">Ver todos los flash</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portafolio con filtros -->
+    <section id="portafolio" class="section" aria-labelledby="portafolio-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="portafolio-title">Portafolio</h2>
+          <p>Curado por estilo. Toca para ampliar.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filtros de estilos">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter" data-filter="mini" role="tab">Mini</button>
+          <button class="filter" data-filter="blackwork" role="tab">Blackwork</button>
+          <button class="filter" data-filter="lettering" role="tab">Lettering</button>
+        </div>
+
+        <div class="grid" id="portfolioGrid">
+          <!-- Ejemplos (duplica y cambia data-tags y src) -->
+          <figure class="grid-item" data-tags="mini blackwork">
+            <img src="img/work-01.jpg" alt="Mini blackwork 01" loading="lazy">
+          </figure>
+          <figure class="grid-item" data-tags="lettering">
+            <img src="img/work-02.jpg" alt="Lettering 01" loading="lazy">
+          </figure>
+          <figure class="grid-item" data-tags="blackwork">
+            <img src="img/work-03.jpg" alt="Blackwork 01" loading="lazy">
+          </figure>
+          <figure class="grid-item" data-tags="mini">
+            <img src="img/work-04.jpg" alt="Mini 02" loading="lazy">
+          </figure>
+          <figure class="grid-item" data-tags="lettering">
+            <img src="img/work-05.jpg" alt="Lettering 02" loading="lazy">
+          </figure>
+          <figure class="grid-item" data-tags="blackwork">
+            <img src="img/work-06.jpg" alt="Blackwork 02" loading="lazy">
+          </figure>
+        </div>
+      </div>
+
+      <!-- Viewer Modal -->
+      <dialog id="viewer" aria-label="Vista ampliada de tatuaje">
+        <button class="viewer-close" aria-label="Cerrar">×</button>
+        <img id="viewerImg" alt="">
+      </dialog>
+    </section>
+
+    <!-- Proceso -->
+    <section id="proceso" class="section" aria-labelledby="proceso-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="proceso-title">Proceso</h2>
+        </div>
+        <ol class="steps">
+          <li><strong>Consulta rápida:</strong> Envíame tu idea por WhatsApp con tamaño y zona.</li>
+          <li><strong>Diseño:</strong> Boceto simple o selección de flash.</li>
+          <li><strong>Agenda:</strong> Definimos fecha y abono de reserva.</li>
+          <li><strong>Higiene:</strong> Materiales esterilizados y área sanitizada.</li>
+          <li><strong>Tatuaje:</strong> Precisión y comunicación durante todo el proceso.</li>
+          <li><strong>Aftercare:</strong> Te entrego guía de cuidados y seguimiento.</li>
+        </ol>
+        <a class="btn btn-secondary" href="#aftercare">Ver cuidados</a>
+      </div>
+    </section>
+
+    <!-- Aftercare -->
+    <section id="aftercare" class="section" aria-labelledby="aftercare-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="aftercare-title">Cuidados (Aftercare)</h2>
+        </div>
+        <ul class="bullets">
+          <li>Lava suavemente con agua tibia y jabón neutro 2–3 veces al día.</li>
+          <li>Aplica capa fina de crema recomendada, no sobrehidrates.</li>
+          <li>Evita sol directo, piscina y sauna por 2 semanas.</li>
+          <li>No retires costras; deja que cicatrice naturalmente.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Precios & políticas -->
+    <section id="precios" class="section" aria-labelledby="precios-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="precios-title">Precios & Políticas</h2>
+        </div>
+        <div class="pricing">
+          <div class="pricing-item">
+            <h3>Mini tattoos</h3>
+            <p>Desde <strong>$20</strong> • máx 5 cm • negro.</p>
+          </div>
+          <div class="pricing-item">
+            <h3>Lettering</h3>
+            <p>Desde <strong>$25</strong> • hasta 7 cm • negro.</p>
+          </div>
+          <div class="policy">
+            <h4>Políticas</h4>
+            <ul>
+              <li>Reserva con abono (descontable el día de la cita).</li>
+              <li>Reprogramaciones con 24 h de antelación.</li>
+              <li>Higiene y bioseguridad: materiales esterilizados y desechables.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about-media">
+          <img src="img/about.webp" alt="Artista de GorillaInk" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h2 id="about-title">Sobre GorillaInk</h2>
+          <p>Estudio independiente especializado en mini tattoos, blackwork y lettering. Proceso claro, trato cercano y enfoque en piezas limpias que sanan bien.</p>
+          <a class="btn btn-secondary" href="https://www.instagram.com/gorillaink_sv/" target="_blank" rel="noopener">Ver Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="contacto-title">Contacto</h2>
+          <p>La forma más rápida: WhatsApp.</p>
+        </div>
+        <div class="contact">
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://wa.me/50374913370?text=Hola%20GorillaInk,%20quiero%20agendar" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+            <a class="btn btn-outline" href="tel:+50374913370">Llamar</a>
+            <a class="btn btn-outline" href="mailto:contacto@gorillaink.example">Email</a>
+          </div>
+          <div class="map">
+            <!-- Sustituye el src por tu ubicación real cuando la tengas -->
+            <iframe
+              title="Mapa GorillaInk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d589.3720114301565!2d-89.55834252551536!3d13.697623242162813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62cf005a10666b%3A0xdb0fab9473a9d5fd!2sDENTFLOC!5e1!3m2!1ses!2ssv!4v1758180674318!5m2!1ses!2ssv"
+              width="100%" height="320" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón flotante WA -->
+  <a class="wa-fab" href="https://wa.me/50374913370?text=Hola%20GorillaInk,%20quiero%20agendar" target="_blank" rel="noopener" aria-label="WhatsApp flotante">WA</a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> GorillaInk — San Salvador</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/gorillaink_sv/" target="_blank" rel="noopener" aria-label="Instagram GorillaInk">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
